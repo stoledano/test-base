@@ -14,13 +14,29 @@ public class MathOperationTest {
         // ARRANGE
         int a = 10;
         int b = 20;
+        MathOperation sut = new MathOperation();
 
         // ACT
-        MathOperation sut = new MathOperation();
-        boolean equal = sut.compare(a, b);
+        boolean equals = sut.compare(a, b);
 
         // ASSERT
-        assertThat(equal, is(Boolean.FALSE));
+        assertThat(equals, is(Boolean.FALSE));
+    }
+
+    @Test public void
+    shouldCompareTwoEqulasIntegers(){
+
+        // ARRANGE
+        int a = 10;
+        int c = 10;
+        MathOperation sut = new MathOperation();
+
+        // ACT
+        boolean equals = sut.compare(a, c);
+
+        // ASSERT
+        assertThat(equals, is(Boolean.TRUE));
+
     }
 
 }
