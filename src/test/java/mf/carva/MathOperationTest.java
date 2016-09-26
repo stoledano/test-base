@@ -24,7 +24,7 @@ public class MathOperationTest {
     }
 
     @Test public void
-    shouldCompareTwoEqulasIntegers(){
+    shouldCompareTwoEqualsIntegers(){
 
         // ARRANGE
         int a = 10;
