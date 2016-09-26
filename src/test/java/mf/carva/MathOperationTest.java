@@ -20,7 +20,7 @@ public class MathOperationTest {
         boolean equal = sut.compare(a, b);
 
         // ASSERT
-        assertThat(equal, is(Boolean.TRUE));
+        assertThat(equal, is(Boolean.FALSE));
     }
 
 }
